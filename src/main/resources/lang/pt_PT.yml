@@ -1,0 +1,452 @@
+# ============================================
+# CommunityMarket Ficheiro de Idioma - Português (Portugal)
+# ============================================
+
+# Geral
+prefix: "&8[&6Mercado&8] &r"
+
+# Mensagens Gerais
+messages:
+  no-permission: "&cNão tens permissão para fazer isso."
+  player-only: "&cEste comando só pode ser usado por jogadores."
+  reload-success: "&aConfiguração recarregada com sucesso!"
+  economy-not-found: "&cNenhum plugin de economia encontrado! Mercado desativado."
+
+  # Mensagens de Anúncios
+  listing-created: "&aAnúncio criado com sucesso! ID: #{id}"
+  listing-cancelled: "&aAnúncio cancelado. Item devolvido ao armazém."
+  listing-expired: "&eO teu anúncio #{id} expirou. Item movido para o armazém."
+  listing-purchased: "&aCompraste {item} x{amount} por {price}!"
+  listing-sold: "&aO teu {item} x{amount} foi vendido a {buyer} por {price}!"
+  listing-limit-reached: "&cAtingiste o número máximo de anúncios ({max})."
+  listing-cooldown: "&cPor favor aguarda {time} antes de criar outro anúncio."
+  listing-not-found: "&cAnúncio não encontrado ou já não está disponível."
+  listing-own-item: "&cNão podes comprar o teu próprio anúncio."
+  listing-insufficient-funds: "&cNão tens dinheiro suficiente. Necessário: {price}"
+
+  # Mensagens de Leilões
+  auction-created: "&aLeilão criado com sucesso! ID: #{id}"
+  auction-cancelled: "&aLeilão cancelado. Item devolvido ao armazém."
+  auction-ended-winner: "&aParabéns! Ganhaste o leilão por {item}! Pagaste: {price}"
+  auction-ended-seller: "&aO teu leilão por {item} terminou! Vencedor: {winner}, Ganhaste: {price}"
+  auction-ended-no-bids: "&eO teu leilão por {item} terminou sem licitações. Item movido para o armazém."
+  auction-limit-reached: "&cAtingiste o número máximo de leilões ({max})."
+  auction-not-found: "&cLeilão não encontrado ou já não está disponível."
+  auction-own-item: "&cNão podes licitar no teu próprio leilão."
+  auction-bid-placed: "&aFizeste uma licitação de {amount} em {item}!"
+  auction-outbid: "&eForam feitas licitações superiores à tua em {item}! Nova licitação: {amount} por {bidder}"
+  auction-bid-too-low: "&cLicitação muito baixa! Mínimo: {min}"
+  auction-insufficient-funds: "&cNão tens dinheiro suficiente. Necessário: {price}"
+  auction-buyout: "&aCompraste o leilão de {item} por {price}!"
+  auction-extended: "&eLeilão prolongado por {seconds}s devido à proteção anti-snipe."
+
+  # Mensagens de Reclamação
+  claim-success: "&aItem reclamado com sucesso!"
+  claim-empty: "&eNão tens itens para reclamar."
+  claim-inventory-full: "&cO teu inventário está cheio! Por favor liberta espaço."
+  claim-all-success: "&aReclamaste {count} itens!"
+
+  # Mensagens de Ganhos
+  earnings-withdrawn: "&aLevantaste {amount}! Novo saldo: {balance}"
+  earnings-empty: "&eNão tens ganhos pendentes."
+  earnings-balance: "&aOs teus ganhos pendentes: {amount}"
+
+  # Validação de Itens
+  invalid-item: "&cPor favor seleciona um item válido."
+  item-no-longer-available: "&cO item selecionado já não está no teu inventário."
+  item-changed: "&cO item selecionado foi alterado. Por favor seleciona novamente."
+  quantity-changed: "&cA quantidade disponível foi alterada. Por favor verifica e tenta novamente."
+  blacklisted-item: "&cEste tipo de item não é permitido no mercado."
+  blacklisted-content: "&cEste item contém conteúdo bloqueado."
+  invalid-price: "&cPreço inválido. Intervalo: {min} - {max}"
+  invalid-amount: "&cQuantidade inválida."
+  invalid-duration: "&cDuração inválida."
+
+  # Mensagens de Admin
+  admin-listing-removed: "&aAnúncio #{id} removido pelo admin."
+  admin-auction-cancelled: "&aLeilão #{id} cancelado pelo admin."
+  admin-reload: "&aConfiguração recarregada."
+
+# Títulos GUI (suportam códigos de cor)
+gui-titles:
+  main-menu: "&8&lMercado Comunitário"
+  browse-market: "&8&lExplorar Mercado &7(Página {page})"
+  browse-auctions: "&8&lExplorar Leilões &7(Página {page})"
+  create-listing: "&8&lCriar Anúncio"
+  create-auction: "&8&lCriar Leilão"
+  select-item-listing: "&8&lSelecionar Item para Vender"
+  select-item-auction: "&8&lSelecionar Item para Leilão"
+  quantity-select: "&8&lSelecionar Quantidade"
+  my-listings: "&8&lOs Meus Anúncios"
+  my-auctions: "&8&lOs Meus Leilões"
+  claim-items: "&8&lReclamar Itens"
+  earnings: "&8&lGanhos"
+  confirm-purchase: "&8&lConfirmar Compra"
+  confirm-bid: "&8&lConfirmar Licitação"
+  confirm-cancel: "&8&lConfirmar Cancelamento"
+  number-input: "&8&lIntroduzir Valor"
+  admin-panel: "&8&lPainel de Admin"
+  admin-listings: "&8&lTodos os Anúncios"
+  admin-auctions: "&8&lTodos os Leilões"
+  listing-details: "&8&lDetalhes do Anúncio"
+  auction-details: "&8&lDetalhes do Leilão"
+  filter-menu: "&8&lOpções de Filtro"
+  sort-menu: "&8&lOpções de Ordenação"
+  duration-select: "&8&lSelecionar Duração"
+  help: "&8&lAjuda"
+
+# Nomes dos Botões
+buttons:
+  # Menu Principal
+  browse-market: "&aExplorar Mercado"
+  browse-auctions: "&6Explorar Leilões"
+  create-listing: "&eCriar Anúncio"
+  create-auction: "&eCriar Leilão"
+  my-listings: "&bOs Meus Anúncios"
+  my-auctions: "&bOs Meus Leilões"
+  claim-items: "&dReclamar Itens"
+  earnings: "&aGanhos"
+  help: "&fAjuda"
+  admin: "&cPainel de Admin"
+
+  # Navegação
+  next-page: "&aPágina Seguinte →"
+  previous-page: "&a← Página Anterior"
+  back: "&cVoltar"
+  close: "&cFechar"
+
+  # Ações
+  confirm: "&aConfirmar"
+  cancel: "&cCancelar"
+  buy: "&aComprar Agora"
+  bid: "&6Fazer Licitação"
+  buyout: "&eCompra Imediata"
+  claim: "&aReclamar"
+  claim-all: "&aReclamar Tudo"
+  withdraw: "&aLevantar Tudo"
+  remove: "&cRemover Anúncio"
+  cancel-auction: "&cCancelar Leilão"
+
+  # Entrada Numérica
+  add-1: "&a+1"
+  add-10: "&a+10"
+  add-100: "&a+100"
+  add-1000: "&a+1.000"
+  subtract-1: "&c-1"
+  subtract-10: "&c-10"
+  subtract-100: "&c-100"
+  subtract-1000: "&c-1.000"
+  set-min: "&eDefinir Mín"
+  set-max: "&eDefinir Máx"
+  custom-amount: "&bValor Personalizado"
+
+  # Filtros e Ordenação
+  filter: "&eFiltro"
+  sort: "&eOrdenar"
+  search: "&ePesquisar"
+  clear-filter: "&cLimpar Filtros"
+
+  # Duração
+  duration-1h: "&e1 Hora"
+  duration-6h: "&e6 Horas"
+  duration-12h: "&e12 Horas"
+  duration-24h: "&e24 Horas"
+  duration-48h: "&e48 Horas"
+  duration-72h: "&e3 Dias"
+  duration-168h: "&e7 Dias"
+  duration-336h: "&e14 Dias"
+
+  # Admin
+  admin-view-listings: "&aVer Todos os Anúncios"
+  admin-view-auctions: "&6Ver Todos os Leilões"
+  admin-reload: "&eRecarregar Config"
+
+# Lore dos Botões (descrições)
+lore:
+  browse-market:
+    - "&7Explora todos os anúncios"
+    - "&7de preço fixo dos jogadores."
+    - ""
+    - "&eClica para explorar!"
+  browse-auctions:
+    - "&7Explora todos os leilões ativos"
+    - "&7e faz licitações."
+    - ""
+    - "&eClica para explorar!"
+  create-listing:
+    - "&7Vende itens a um preço fixo."
+    - "&7Taxa: &f{tax}%"
+    - ""
+    - "&eClica para criar!"
+  create-auction:
+    - "&7Leiloa itens ao"
+    - "&7maior licitador."
+    - "&7Taxa: &f{tax}%"
+    - ""
+    - "&eClica para criar!"
+  my-listings:
+    - "&7Vê e gere os teus"
+    - "&7anúncios ativos."
+    - ""
+    - "&7Ativos: &f{count}/{max}"
+    - ""
+    - "&eClica para ver!"
+  my-auctions:
+    - "&7Vê e gere os teus"
+    - "&7leilões ativos."
+    - ""
+    - "&7Ativos: &f{count}/{max}"
+    - ""
+    - "&eClica para ver!"
+  claim-items:
+    - "&7Reclama itens de anúncios"
+    - "&7expirados ou leilões ganhos."
+    - ""
+    - "&7Pendentes: &f{count}"
+    - ""
+    - "&eClica para reclamar!"
+  earnings:
+    - "&7Vê e levanta os teus"
+    - "&7ganhos pendentes das vendas."
+    - ""
+    - "&7Pendente: &a{amount}"
+    - ""
+    - "&eClica para ver!"
+  help:
+    - "&7Aprende a usar o"
+    - "&7Mercado Comunitário."
+    - ""
+    - "&eClica para ajuda!"
+  admin:
+    - "&cPainel de Admin"
+    - "&7Gere anúncios e leilões."
+    - ""
+    - "&eClica para abrir!"
+
+  # Info do Anúncio
+  listing-info:
+    - "&7Vendedor: &f{seller}"
+    - "&7Preço: &a{price}"
+    - "&7Quantidade: &f{amount}"
+    - "&7Expira: &f{expires}"
+    - ""
+    - "&eClique esquerdo para comprar!"
+
+  # Info do Leilão
+  auction-info:
+    - "&7Vendedor: &f{seller}"
+    - "&7Licitação inicial: &a{start_price}"
+    - "&7Licitação atual: &a{current_bid}"
+    - "&7Licitador: &f{bidder}"
+    - "&7Licitações: &f{bid_count}"
+    - "&7Termina: &f{ends}"
+    - ""
+    - "&eClique esquerdo para licitar!"
+    - "&eClique direito para compra imediata!"
+
+  # Info do Meu Anúncio
+  my-listing-info:
+    - "&7Preço: &a{price}"
+    - "&7Quantidade: &f{amount}"
+    - "&7Criado: &f{created}"
+    - "&7Expira: &f{expires}"
+    - ""
+    - "&cClica para cancelar"
+
+  # Info do Meu Leilão
+  my-auction-info:
+    - "&7Licitação inicial: &a{start_price}"
+    - "&7Licitação atual: &a{current_bid}"
+    - "&7Licitador: &f{bidder}"
+    - "&7Licitações: &f{bid_count}"
+    - "&7Termina: &f{ends}"
+    - ""
+    - "&cClica para cancelar (sem licitações)"
+
+  # Confirmar Compra
+  confirm-purchase-info:
+    - "&7Estás a comprar:"
+    - "&f{item} x{amount}"
+    - ""
+    - "&7Preço: &a{price}"
+    - "&7Taxa: &e{tax}"
+    - "&7Total: &a{total}"
+    - ""
+    - "&aClica para confirmar!"
+
+  # Confirmar Licitação
+  confirm-bid-info:
+    - "&7Estás a licitar em:"
+    - "&f{item}"
+    - ""
+    - "&7A tua licitação: &a{bid}"
+    - "&7Atual mais alta: &e{current}"
+    - ""
+    - "&aClica para confirmar!"
+
+  # Reclamar Item
+  claim-item-info:
+    - "&7Razão: &f{reason}"
+    - "&7De: &f{source}"
+    - "&7Data: &f{date}"
+    - ""
+    - "&eClica para reclamar!"
+
+  # Info de Ganhos
+  earnings-info:
+    - "&7Os teus ganhos pendentes"
+    - "&7das vendas no mercado."
+    - ""
+    - "&7Total: &a{amount}"
+    - ""
+    - "&aClica para levantar!"
+
+  # Info de Entrada Numérica
+  current-value:
+    - "&7Atual: &a{value}"
+
+# Opções de Filtro
+filters:
+  all: "&fTodos os Itens"
+  weapons: "&cArmas"
+  armor: "&bArmadura"
+  tools: "&eFerramentas"
+  blocks: "&7Blocos"
+  food: "&6Comida"
+  potions: "&dPoções"
+  materials: "&aMateriais"
+  enchanted: "&5Itens Encantados"
+  misc: "&8Diversos"
+
+# Opções de Ordenação
+sort:
+  newest: "&aMais Recente"
+  oldest: "&eMais Antigo"
+  price-low: "&aPreço: Menor para Maior"
+  price-high: "&cPreço: Maior para Menor"
+  ending-soon: "&6A Terminar Em Breve"
+  most-bids: "&bMais Licitações"
+
+# Formatos de Tempo
+time:
+  expired: "&cExpirado"
+  days: "{d}d"
+  hours: "{h}h"
+  minutes: "{m}m"
+  seconds: "{s}s"
+
+# GUI de Seleção de Quantidade
+quantity-select:
+  title: "&6&lSelecionar Quantidade"
+  info-line-1: "&7Escolhe quantos itens"
+  info-line-2: "&7queres vender."
+  available: "&7Disponível: &f{amount}"
+  selected: "&7Selecionado: &f{amount}"
+  quantity-label: "Quantidade"
+  minimum: "&7Mínimo: &f{amount}"
+  maximum: "&7Máximo: &f{amount}"
+  use-buttons: "&eUsa os botões para ajustar"
+  click-adjust: "&7Clica: &e{amount}"
+  set-minimum: "&6Definir Mínimo"
+  set-maximum: "&6Definir Máximo"
+  set-to: "&7Definir para: &f{amount}"
+  back-lore: "&7Voltar à seleção de item"
+  confirm-lore: "&7Quantidade: &a{amount}"
+
+# GUI de Seleção de Item
+item-selection:
+  info-title: "&fSelecionar um Item"
+  info-lore-listing: "&7Clica num item do teu|&7inventário para criar um &eAnúncio&7."
+  info-lore-auction: "&7Clica num item do teu|&7inventário para criar um &6Leilão&7."
+  blacklisted-note: "&7Itens bloqueados aparecem a vermelho."
+  click-to-select: "&a► Clica para selecionar"
+  blocked-title: "&c{material}"
+  blocked-lore-1: "&7Este item não pode ser listado."
+  blocked-lore-2: "&cBloqueado ou inválido."
+  back-lore: "&7Voltar ao menu principal"
+
+# GUI de Criar Anúncio
+create-listing:
+  info-title: "&6&lCriar Anúncio"
+  info-lore-1: "&7Define um preço e duração"
+  info-lore-2: "&7para o teu anúncio."
+  tax-info: "&7Taxa: &f{tax}%"
+  item-lore: "&7Quantidade: &f{amount}|&eEste item será listado"
+  price-title: "&6Preço: {price}"
+  price-tax: "&7Taxa ({percent}%): &c{amount}"
+  price-earnings: "&7Recebes: &a{amount}"
+  price-click: "&eClica para alterar preço"
+  duration-title: "&eDuração: {duration}"
+  duration-lore: "&7O anúncio expira após este tempo"
+  duration-click: "&eClica para alterar duração"
+  back-lore: "&7Voltar à seleção de item"
+  confirm-item: "&7Item: &f{item} x{amount}"
+  confirm-price: "&7Preço: &a{price}"
+  confirm-earnings: "&7Recebes: &a{amount}"
+  confirm-duration: "&7Duração: &e{duration}"
+  confirm-click: "&aClica para criar anúncio!"
+
+# GUI de Criar Leilão
+create-auction:
+  info-title: "&6&lCriar Leilão"
+  info-lore-1: "&7Define preço inicial, compra imediata opcional,"
+  info-lore-2: "&7e duração para o teu leilão."
+  tax-info: "&7Taxa na venda: &f{tax}%"
+  item-lore: "&7Quantidade: &f{amount}|&eEste item será leiloado"
+  start-price-title: "&6Preço Inicial: {price}"
+  start-price-lore-1: "&7Licitação mínima para iniciar"
+  start-price-lore-2: "&7o leilão."
+  start-price-click: "&eClica para alterar"
+  buyout-title-set: "&bCompra Imediata: {price}"
+  buyout-title-unset: "&bCompra Imediata: &7Não definido"
+  buyout-lore-set-1: "&7Preço de compra instantânea."
+  buyout-lore-set-2: "&eClique esquerdo para alterar"
+  buyout-lore-set-3: "&cClique direito para remover"
+  buyout-lore-unset-1: "&7Preço opcional de compra"
+  buyout-lore-unset-2: "&7instantânea para o teu leilão."
+  buyout-lore-unset-click: "&eClica para definir preço de compra imediata"
+  duration-title: "&eDuração: {duration}"
+  duration-lore: "&7O leilão termina após este tempo."
+  duration-click: "&eClica para alterar duração"
+  back-lore: "&7Voltar à seleção de item"
+  confirm-item: "&7Item: &f{item} x{amount}"
+  confirm-start: "&7Início: &a{price}"
+  confirm-buyout: "&7Compra Imediata: &b{price}"
+  confirm-buyout-none: "&7Compra Imediata: &7Nenhum"
+  confirm-duration: "&7Duração: &e{duration}"
+  confirm-click: "&aClica para criar leilão!"
+
+# GUI de Entrada Numérica
+number-input:
+  display-title: "&6&l{value}"
+  minimum: "&7Mínimo: &f{value}"
+  maximum: "&7Máximo: &f{value}"
+  use-buttons: "&eUsa os botões para ajustar"
+  click-adjust: "&7Clica: &e{amount}"
+  shift-click: "&7Shift-clica: &e{amount}"
+  set-minimum: "&6Definir Mínimo"
+  set-maximum: "&6Definir Máximo"
+  set-to: "&7Definir para: &f{value}"
+  cancel-lore: "&7Cancelar e voltar"
+  confirm-lore: "&7Confirmar: &a{value}"
+
+# Conteúdo de Ajuda
+help:
+  title: "&6&lAjuda do Mercado Comunitário"
+  content:
+    - "&eExplorar Mercado &7- Ver e comprar anúncios de preço fixo"
+    - "&eExplorar Leilões &7- Ver e licitar em leilões"
+    - "&eCriar Anúncio &7- Vender itens a um preço fixo"
+    - "&eCriar Leilão &7- Leiloar itens ao maior licitador"
+    - "&eOs Meus Anúncios &7- Gerir os teus anúncios ativos"
+    - "&eOs Meus Leilões &7- Gerir os teus leilões ativos"
+    - "&eReclamar Itens &7- Recolher itens não vendidos/ganhos"
+    - "&eGanhos &7- Levantar dinheiro das vendas"
+    - ""
+    - "&7&oDica: Todas as ações são feitas através de GUIs!"
+    - "&7&oBasta clicar nos botões para navegar."
+  tax-title: "&6Informação de Taxas"
+  tax-market: "&7Taxa do Mercado: &f{tax}%"
+  tax-auction: "&7Taxa dos Leilões: &f{tax}%"
+  tax-note: "&7As taxas são deduzidas dos ganhos do vendedor."
+

@@ -1,0 +1,83 @@
+name: CommunityMarket
+version: '${project.version}'
+main: pt.henrique.communityMarket.CommunityMarket
+api-version: '1.21'
+description: A GUI-only marketplace plugin for fixed-price listings and auctions
+author: Henrique
+website: https://github.com/henrique/CommunityMarket
+
+# Soft dependencies - plugin will detect and use these if available
+softdepend:
+  - Vault
+  - Essentials
+
+load: POSTWORLD
+
+commands:
+  market:
+    description: Opens the Community Market main menu
+    usage: /<command>
+    aliases: [cmarket]
+    permission: communitymarket.use
+
+permissions:
+  communitymarket.*:
+    description: Grants all CommunityMarket permissions
+    default: op
+    children:
+      communitymarket.use: true
+      communitymarket.sell: true
+      communitymarket.auction: true
+      communitymarket.buy: true
+      communitymarket.bid: true
+      communitymarket.claim: true
+      communitymarket.withdraw: true
+      communitymarket.admin: true
+
+  communitymarket.use:
+    description: Allows access to the market GUI
+    default: true
+
+  communitymarket.sell:
+    description: Allows creating fixed-price listings
+    default: true
+
+  communitymarket.auction:
+    description: Allows creating auctions
+    default: true
+
+  communitymarket.buy:
+    description: Allows purchasing from the market
+    default: true
+
+  communitymarket.bid:
+    description: Allows bidding on auctions
+    default: true
+
+  communitymarket.claim:
+    description: Allows claiming items from storage
+    default: true
+
+  communitymarket.withdraw:
+    description: Allows withdrawing earnings
+    default: true
+
+  communitymarket.admin:
+    description: Allows access to admin functions
+    default: op
+    children:
+      communitymarket.admin.viewall: true
+      communitymarket.admin.remove: true
+      communitymarket.admin.reload: true
+
+  communitymarket.admin.viewall:
+    description: Allows viewing all listings/auctions
+    default: op
+
+  communitymarket.admin.remove:
+    description: Allows removing any listing or auction
+    default: op
+
+  communitymarket.admin.reload:
+    description: Allows reloading configuration
+    default: op

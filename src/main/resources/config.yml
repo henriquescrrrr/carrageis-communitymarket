@@ -1,0 +1,152 @@
+# ============================================
+# CommunityMarket Configuration
+# A GUI-only marketplace plugin
+# ============================================
+
+# Language setting (available: en_US, pt_PT)
+language: pt_PT
+
+# Database Configuration
+database:
+  # Type: sqlite or mysql
+  type: sqlite
+
+  sqlite:
+    file: database.db
+
+  mysql:
+    host: localhost
+    port: 3306
+    database: communitymarket
+    username: root
+    password: ""
+    pool:
+      maximum-pool-size: 10
+      minimum-idle: 2
+      connection-timeout: 30000
+      idle-timeout: 600000
+      max-lifetime: 1800000
+
+# Economy Settings
+economy:
+  # Currency display format (uses Java DecimalFormat)
+  currency-format: "$#,##0.00"
+  currency-symbol: "$"
+
+  taxes:
+    # Tax percentage for fixed-price market sales (seller pays)
+    market-tax: 5.0
+    # Tax percentage for auction sales (seller pays)
+    auction-tax: 7.5
+
+# Fixed-Price Market Settings
+market:
+  # Maximum active listings per player
+  max-listings-per-player: 20
+  # Cooldown between creating listings (seconds, 0 = disabled)
+  listing-cooldown: 0
+  # Default listing duration in hours
+  default-duration-hours: 168
+  # Available durations for players to choose (in hours)
+  available-durations:
+    - 24
+    - 72
+    - 168
+    - 336
+  # Price limits
+  min-price: 1.0
+  max-price: 1000000000.0
+
+# Auction Settings
+auction:
+  # Maximum active auctions per player
+  max-auctions-per-player: 10
+  # Duration limits (hours)
+  min-duration-hours: 1
+  max-duration-hours: 168
+  default-duration-hours: 24
+  # Available durations for players to choose (in hours)
+  available-durations:
+    - 1
+    - 6
+    - 12
+    - 24
+    - 48
+    - 72
+    - 168
+  # Price limits for starting bid
+  min-start-price: 1.0
+  max-start-price: 1000000000.0
+  # Minimum bid increment (percentage of current bid)
+  min-bid-increment-percent: 5.0
+  # Minimum absolute bid increment
+  min-bid-increment-absolute: 1.0
+
+  # Anti-snipe protection
+  anti-snipe:
+    enabled: true
+    # If bid placed within this many seconds of end, extend auction
+    trigger-seconds: 30
+    # How many seconds to extend
+    extension-seconds: 30
+    # Maximum number of extensions (0 = unlimited)
+    max-extensions: 10
+
+# Item Blacklist
+blacklist:
+  # Materials that cannot be listed/auctioned
+  materials:
+    - BARRIER
+    - COMMAND_BLOCK
+    - CHAIN_COMMAND_BLOCK
+    - REPEATING_COMMAND_BLOCK
+    - COMMAND_BLOCK_MINECART
+    - STRUCTURE_BLOCK
+    - STRUCTURE_VOID
+    - JIGSAW
+    - DEBUG_STICK
+    - KNOWLEDGE_BOOK
+    - SPAWNER
+    - BEDROCK
+  # Items with these keywords in their name/lore are blocked
+  keywords:
+    - "admin"
+    - "illegal"
+    - "exploit"
+
+# GUI Settings
+gui:
+  # Items displayed per page in browse views
+  items-per-page: 45
+
+  # Whether to show the Help button in the main menu
+  # Set to false to hide it (slot will be filled with glass)
+  show-help-button: true
+
+  # Sound effects (use Bukkit Sound enum names)
+  sounds:
+    click: UI_BUTTON_CLICK
+    success: ENTITY_PLAYER_LEVELUP
+    error: ENTITY_VILLAGER_NO
+    purchase: ENTITY_EXPERIENCE_ORB_PICKUP
+
+# Notification Settings
+notifications:
+  # Notify seller when their item sells
+  notify-on-sale: true
+  # Notify bidder when they are outbid
+  notify-on-outbid: true
+  # Notify winner when they win an auction
+  notify-on-win: true
+  # Notify seller when their listing expires
+  notify-on-expire: true
+
+# Performance Settings
+performance:
+  # How often to cache listings/auctions (seconds)
+  cache-duration: 30
+  # How often to check for ended auctions (seconds)
+  auction-check-interval: 5
+  # How often to check for expired listings (minutes)
+  expired-check-interval: 5
+
