@@ -45,11 +45,15 @@ messages:
   claim-empty: "&eYou have no items to claim."
   claim-inventory-full: "&cYour inventory is full! Please make space."
   claim-all-success: "&aClaimed {count} items!"
+  claim-items: "&eYou have &6{count}&e item(s) waiting to be claimed. Use /market to claim them."
 
   # Earnings Messages
   earnings-withdrawn: "&aWithdrew {amount}! New balance: {balance}"
   earnings-empty: "&eYou have no pending earnings."
   earnings-balance: "&aYour pending earnings: {amount}"
+
+  # Generic
+  failed: "&cSomething went wrong. Please try again."
 
   # Item Validation
   invalid-item: "&cPlease select a valid item."

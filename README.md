@@ -1,43 +1,43 @@
 # CommunityMarket
 
-[![Modrinth Downloads](https://img.shields.io/modrinth/dt/communitymarket?logo=modrinth)](https://modrinth.com/plugin/communitymarket)
+[![Modrinth Downloads](https://img.shields.io/modrinth/dt/carrageis-communitymarket?logo=modrinth)](https://modrinth.com/plugin/carrageis-communitymarket)
 [![GitHub License](https://img.shields.io/github/license/henrique/CommunityMarket)](LICENSE)
 
 A professional, production-ready **GUI-only marketplace plugin** for Minecraft Paper 1.21+.
 
 Players can create fixed-price listings and auctions, browse, buy, bid, claim items, and withdraw earnings — all through intuitive GUIs. **No complex commands to learn!**
 
-## ✨ Features
+Features
 
-### 🛒 Fixed-Price Market
+Fixed-Price Market
 - Create listings with custom prices and durations
 - Browse paginated listings with sorting
 - Safe atomic purchases to prevent double-buying
 - Configurable taxes on sales
 
-### 🔨 Auction System
+Auction System
 - Start auctions with minimum bid and optional buyout price
 - **Anti-snipe protection** extends auction when bids arrive near the end
 - Bid history and automatic outbid notifications
 - Safe handling of auction endings and payouts
 
-### 📦 Claim Storage
+Claim Storage
 - Items from expired listings go to claim storage
 - Won auction items are safely delivered
 - Handles full inventories gracefully
 
-### 💰 Earnings Management
+Earnings Management
 - Pending earnings from sales accumulate
 - Withdraw all earnings at once
 - Complete transaction history
 
-### 🔐 Admin Features (GUI-based)
+Admin Features (GUI-based)
 - View all listings and auctions
 - Remove any listing or cancel auctions
 - Force-end auctions
 - Reload configuration in-game
 
-### 🎮 Intuitive GUI Flow
+Intuitive GUI Flow
 The creation flow for listings and auctions:
 1. **Main Menu** - Central hub for all actions
 2. **Select Item** - Click an item from your inventory
@@ -45,7 +45,7 @@ The creation flow for listings and auctions:
 4. **Settings** - Set price and duration with easy click-to-adjust controls
 5. **Confirm** - Review and create your listing/auction
 
-## 📋 Requirements
+Requirements
 
 | Requirement | Version |
 |-------------|---------|
@@ -57,23 +57,23 @@ The creation flow for listings and auctions:
 CommunityMarket supports two economy configurations:
 
 1. **Vault + Economy Plugin** (Recommended)
-   - Install [Vault](https://modrinth.com/plugin/vault-2.0-economy-plugins)
+   - Install [VaultUnlocked](https://modrinth.com/plugin/vaultunlocked)
    - Install an economy plugin: [EssentialsX](https://essentialsx.net/), CMI, or any Vault-compatible economy
 
 2. **EssentialsX Standalone** (Fallback)
    - Install [EssentialsX](https://essentialsx.net/) with economy enabled
    - CommunityMarket will use EssentialsX directly if Vault is not present
 
-## 📥 Installation
+Installation
 
-1. Download the latest `CommunityMarket-x.x.x.jar` from [Modrinth](https://modrinth.com/plugin/communitymarket)
+1. Download the latest `CommunityMarket-x.x.x.jar` from [Modrinth](https://modrinth.com/plugin/carrageis-communitymarket)
 2. Place it in your server's `plugins/` folder
 3. Ensure you have an economy system installed (see above)
 4. Start or restart your server
 5. Edit `plugins/CommunityMarket/config.yml` as needed
 6. Use `/market` to open the marketplace!
 
-## 🎮 Commands
+Commands
 
 | Command | Alias | Description | Permission |
 |---------|-------|-------------|------------|
@@ -81,7 +81,7 @@ CommunityMarket supports two economy configurations:
 
 **That's it!** Everything else is done through GUIs.
 
-## 🔒 Permissions
+Permissions
 
 | Permission | Description | Default |
 |------------|-------------|---------|
@@ -94,11 +94,8 @@ CommunityMarket supports two economy configurations:
 | `communitymarket.claim` | Claim items from storage | everyone |
 | `communitymarket.withdraw` | Withdraw earnings | everyone |
 | `communitymarket.admin` | Access admin functions | op |
-| `communitymarket.admin.viewall` | View all listings/auctions | op |
-| `communitymarket.admin.remove` | Remove any listing/auction | op |
-| `communitymarket.admin.reload` | Reload configuration | op |
 
-## ⚙️ Configuration
+Configuration
 
 ### config.yml Highlights
 
@@ -148,7 +145,7 @@ gui:
 
 Language files are located in `plugins/CommunityMarket/lang/` and can be customized.
 
-## 🔧 Troubleshooting
+Troubleshooting
 
 ### "No compatible economy provider found!"
 
@@ -156,7 +153,7 @@ This error appears when CommunityMarket cannot find an economy system.
 
 **Solutions:**
 1. **Install Vault + an economy plugin:**
-   - Download [Vault]([https://www.spigotmc.org/resources/vault.34315/](https://modrinth.com/plugin/vault-2.0-economy-plugins))
+   - Download [VaultUnlocked](https://modrinth.com/plugin/vaultunlocked)
    - Download [EssentialsX](https://essentialsx.net/) or another economy plugin
    - Restart your server
 
@@ -190,20 +187,20 @@ database:
     password: your_password
 ```
 
-## 📊 API
+API
 
 CommunityMarket does not currently provide a public API. If you need integration capabilities, please open an issue on GitHub.
 
-## 🤝 Support
+Support
 
-- **Issues & Bug Reports:** [GitHub Issues](https://github.com/henrique/CommunityMarket/issues)
-- **Feature Requests:** [GitHub Issues](https://github.com/henrique/CommunityMarket/issues)
+- **Issues & Bug Reports:** [GitHub Issues](https://github.com/henriquescrrrr/carrageis-communitymarket/issues)
+- **Feature Requests:** [GitHub Issues](https://github.com/henriquescrrrr/carrageis-communitymarket/issues)
 
-## 📜 License
+License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Credits
+Credits
 
 - Built for the Paper/Spigot community
 - Uses [Vault](https://github.com/MilkBowl/VaultAPI) for economy integration

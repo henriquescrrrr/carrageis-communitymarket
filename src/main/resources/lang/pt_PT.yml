@@ -45,11 +45,15 @@ messages:
   claim-empty: "&eNão tens itens para reclamar."
   claim-inventory-full: "&cO teu inventário está cheio! Por favor liberta espaço."
   claim-all-success: "&aReclamaste {count} itens!"
+  claim-items: "&eTens &6{count}&e item(ns) por reclamar. Usa /market para os reclamar."
 
   # Mensagens de Ganhos
   earnings-withdrawn: "&aLevantaste {amount}! Novo saldo: {balance}"
   earnings-empty: "&eNão tens ganhos pendentes."
   earnings-balance: "&aOs teus ganhos pendentes: {amount}"
+
+  # Genérico
+  failed: "&cAlgo correu mal. Tenta novamente."
 
   # Validação de Itens
   invalid-item: "&cPor favor seleciona um item válido."

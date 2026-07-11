@@ -4,7 +4,7 @@ main: pt.henrique.communityMarket.CommunityMarket
 api-version: '1.21'
 description: A GUI-only marketplace plugin for fixed-price listings and auctions
 author: Henrique
-website: https://github.com/henrique/CommunityMarket
+website: https://github.com/henriquescrrrr/carrageis-communitymarket
 
 # Soft dependencies - plugin will detect and use these if available
 softdepend:
@@ -63,21 +63,5 @@ permissions:
     default: true
 
   communitymarket.admin:
-    description: Allows access to admin functions
-    default: op
-    children:
-      communitymarket.admin.viewall: true
-      communitymarket.admin.remove: true
-      communitymarket.admin.reload: true
-
-  communitymarket.admin.viewall:
-    description: Allows viewing all listings/auctions
-    default: op
-
-  communitymarket.admin.remove:
-    description: Allows removing any listing or auction
-    default: op
-
-  communitymarket.admin.reload:
-    description: Allows reloading configuration
+    description: Allows access to admin functions (view all, remove listings, reload)
     default: op
